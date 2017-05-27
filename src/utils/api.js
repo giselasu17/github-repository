@@ -43,7 +43,7 @@ const getUserData = (player) => {
     });
 }
 
-const sortPlayer = (players) => {
+const sortPlayers = (players) => {
     return players.sort((a,b) => {
         return b.score - a.score;
     })
@@ -56,7 +56,7 @@ const api = {
     battle: (players) => {
         return axios.all(players.map(getUserData))
             .then(sortPlayers)
-            .catch(errorHandler)
+            .catch(handleError)
     },
     fetchPopularRepos: (lang) => {
         const encodedURI = window.encodeURI('https://api.github.com/search/repositories?q=stars:>1+language:'+lang+'&sort=stars&order=desc&type=Repositories');

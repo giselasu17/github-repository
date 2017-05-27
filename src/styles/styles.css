@@ -16,6 +16,10 @@ a {
     color: #d0021b;
 }
 
+p {
+    text-align: center;
+}
+
 .button {
     color:#e6e6e6;
     background:#0a0a0a;
@@ -149,4 +153,33 @@ a {
 
 .reset:hover {
     cursor: pointer;
+}
+    /*Result Component*/
+.space-list-items {
+    margin-bottom:7px;
+    margin-left: 40%;
+}
+
+.button-home {
+    color:#e6e6e6;
+    background:#d0021b;
+    border:none;
+    font-size:16px;
+    border-radius:3px;
+    width:100px;
+    text-align:center;
+    display:block;
+    margin:5px auto;
+    padding:7px 0;
+}
+
+.button-home:hover:enabled {
+    background:linear-gradient(rgba(175, 14, 32, 0.96),#d0021b);
+    color:#fff;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.button-home:active {
+    transform:translateY(1px);
 }

@@ -10,7 +10,11 @@
     "build": "NODE_ENV='prod' webpack -p"
   },
   "babel": {
-    "presets": ["env", "react",  "stage-0"]
+    "presets": [
+      "env",
+      "react",
+      "stage-0"
+    ]
   },
   "dependencies": {
     "axios": "^0.16.1",
